@@ -22,5 +22,10 @@ You need to have:
 
 I have supplied project files for IntelliJ Idea, but there is no tricks in creating project for other IDEs. [Site](http://paperpointer.com) also contains archive for editor or server starting without IDE.
 
+###License and stuff
+Project is based on [ARToolKit](http://artoolkit.sourceforge.net/).
+Project is GNU GPL licensed (because of license restrictions of the ARToolKit project).
+For camera input [sarxos/webcam-capture](https://github.com/sarxos/webcam-capture) is used.
+Man_bolvanka_new.obj supplied by Slozhny
 
 

@@ -1,0 +1,32 @@
+varying vec3 normal;
+varying vec4 pos;
+//varying vec4 rawpos;
+
+void main() {
+vec3 ambient = vec3(0.2, 0.1, 0.0);
+  vec3 color = vec3(0.7, 0.6, 0.2);//gl_FrontMaterial.diffuse;
+  vec3 matspec = vec3(0.6, 0.5, 0.3);//gl_FrontMaterial.specular;
+  float shininess = 100;
+  vec3 lightspec = vec3(0.8, 0.8, 0.8);
+  vec4 lpos = gl_LightSource[0].position;
+  //vec4 s = -normalize(pos-lpos);
+
+  vec3 light = normalize(vec3(1, 1, 1));//s.xyz;
+  vec3 light2 = normalize(vec3(-2, 1, 1));//s.xyz;
+  vec3 n = normalize(normal);
+  vec3 r = -reflect(light, n);
+  r = normalize(r);
+
+  vec3 r2 = -reflect(light2, n);
+  r2 = normalize(r2);
+
+  vec3 v = -pos.xyz;
+  v = normalize(v);
+    
+  vec3 diffuse  = color * max(0.0, dot(n, light)) * lightspec;// * light diffuse
+  vec3 diffuse2  = color * max(0.0, dot(n, light2)) * lightspec;// * light diffuse
+  vec3 specular = lightspec * matspec * pow(max(0.0, dot(r, v)), shininess);
+  vec3 specular2 = lightspec * matspec * pow(max(0.0, dot(r2, v)), shininess);
+
+  gl_FragColor = vec4(ambient + diffuse + diffuse2 + specular + specular2, 1);
+}

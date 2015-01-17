@@ -1,0 +1,22 @@
+uniform float UseLight;
+varying vec3 N, L;
+varying vec2 texture_coordinate;
+
+uniform sampler2D my_color_texture;
+
+void main(void)
+{
+  vec3 light = normalize(vec3(1, 1, 1));//s.xyz;
+  vec3 light2 = normalize(vec3(-2, 1, 1));//s.xyz;
+
+
+	float intensity = max(0.0, dot(normalize(N), light)) + max(0.0, dot(normalize(N), light2));
+	gl_FragColor = gl_Color;
+	if (gl_FrontFacing) gl_FragColor.rgb *= intensity;
+	else gl_FragColor.rgb *= 0;
+
+
+	//    gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+
+}
+

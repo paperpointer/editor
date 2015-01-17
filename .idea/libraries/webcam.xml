@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="webcam">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bridj-0.7-20130703.103049-42.jar!/" />
+      <root url="jar://$PROJECT_DIR$/slf4j-api-1.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/webcam-capture-0.3.10-RC4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

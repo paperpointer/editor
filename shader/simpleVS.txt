@@ -1,0 +1,31 @@
+uniform vec3 LightPosition;
+uniform float Displacement;
+
+const float SpecularContribution = 0.3;
+const float DiffuseContribution  = 1.0 - SpecularContribution;
+
+attribute vec3 nnn;
+
+varying vec2 texture_coordinate;
+varying vec3 N, L;
+void main(void){
+    N = normalize(gl_NormalMatrix * gl_Normal);
+
+	// vertex MVP transform
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+	gl_Position.z *= Displacement;
+	// eye-space normal
+	N = gl_NormalMatrix * gl_Normal;
+	//N = gl_Normal;
+	// eye-space light vector
+	//vec4 V = gl_ModelViewMatrix * gl_Vertex;
+	L = vec3(1., 1., 0.5);// - V.xyz;
+	// Copy the primary color
+	gl_FrontColor = gl_Color;
+	gl_BackColor = vec4(0, 0, 0, 1);
+    //N = normalize(nnn);
+	//texture_coordinate = vec2(gl_MultiTexCoord0);
+}
+
+
+

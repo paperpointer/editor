@@ -1,0 +1,27 @@
+uniform vec3  BrickColor, MortarColor;
+uniform vec2  BrickSize;
+uniform vec2  BrickPct;
+
+// diffuse.fs
+//
+// per-pixel diffuse lighting
+varying vec3 N, L;
+varying vec2 texture_coordinate;
+
+uniform sampler2D my_color_texture;
+
+void main(void)
+{
+gl_FragColor = texture2D(my_color_texture, texture_coordinate);
+//gl_FragColor.b = 0.;
+	// output the diffuse color
+	float intensity = max(0.0,
+	dot(normalize(N), normalize(L)));
+	gl_FragColor.rgba *= gl_Color;
+	//gl_FragColor.rgb *= intensity;
+
+
+	//    gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+
+}
+

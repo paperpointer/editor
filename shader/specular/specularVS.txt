@@ -1,0 +1,12 @@
+varying vec3 normal;
+varying vec4 pos;
+varying vec4 rawpos;
+
+void main() {
+  normal = gl_NormalMatrix * gl_Normal;
+  //gl_Position = ftransform();
+  gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+  gl_Position.z *= 0.999;
+  pos = gl_ModelViewMatrix * gl_Vertex;
+  //rawpos = gl_Vertex;
+}

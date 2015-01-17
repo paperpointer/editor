@@ -12,7 +12,7 @@ Just supplies 3D data of pointer position over TCP (localhost:9353), so you can 
 Start it via 'PaperServer.java. Example connection in 'PaperClient.java.
 
 ##Editor
-Simple demo editor showing basic usages of 6DOF manipulator. Starts via DDDEditor.java
+Simple demo editor is showing basic usages of 6DOF manipulator. Starts via DDDEditor.java
 
 ###Fast start
 You need to have:

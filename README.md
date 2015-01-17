@@ -16,10 +16,11 @@ Simple demo editor showing basic usages of 6DOF manipulator. Starts via DDDEdito
 
 ###Fast start
 You need to have:
+ * [print and cut out pointer pdf](http://paperpointer.com/paperpointer.pdf)
  * web-camera
  * java 8
- * [print and cut out pointer pdf](http://paperpointer.com/paperpointer.pdf)
 
+I have supplied project files for IntelliJ Idea, but there is no tricks in creating project for other IDEs. [Site](http://paperpointer.com) also contains archive for launch editor or server without IDE.
 
 
 

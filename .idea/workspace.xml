@@ -71,7 +71,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17535">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17610">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -116,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.32857144" vertical-offset="0" max-vertical-offset="1050">
-              <caret line="22" column="202" selection-start-line="22" selection-start-column="202" selection-end-line="22" selection-end-column="202" />
+              <caret line="22" column="204" selection-start-line="22" selection-start-column="204" selection-end-line="22" selection-end-column="204" />
               <folding />
             </state>
           </provider>
@@ -654,7 +654,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421483622644</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="first">
+      <created>1421483958273</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1421483958274</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1075,7 +1081,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32857144" vertical-offset="0" max-vertical-offset="1050">
-          <caret line="22" column="202" selection-start-line="22" selection-start-column="202" selection-end-line="22" selection-end-column="202" />
+          <caret line="22" column="204" selection-start-line="22" selection-start-column="204" selection-end-line="22" selection-end-column="204" />
           <folding />
         </state>
       </provider>

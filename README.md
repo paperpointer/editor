@@ -20,7 +20,7 @@ You need to have:
  * web-camera
  * java 8
 
-I have supplied project files for IntelliJ Idea, but there is no tricks in creating project for other IDEs. [Site](http://paperpointer.com) also contains archive for launch editor or server without IDE.
+I have supplied project files for IntelliJ Idea, but there is no tricks in creating project for other IDEs. [Site](http://paperpointer.com) also contains archive for editor or server starting without IDE.
 
 
 
